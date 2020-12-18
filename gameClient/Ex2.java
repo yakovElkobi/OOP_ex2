@@ -4,6 +4,8 @@ import Server.Game_Server_Ex2;
 import api.*;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -17,18 +19,29 @@ public class Ex2 implements Runnable {
     private static dw_graph_algorithms algoGraph;
     private static GameFrame gameWindow;
     private static Arena arena;
+    protected static Integer id;
+    protected static Integer levelNumber;
 
     public static void main(String[] args) {
         Thread client = new Thread(new Ex2());
-        client.start();
+        //client.start();
+        if (args.length != 0) {//cmd run
+            id = Integer.parseInt(args[0]);
+            levelNumber = Integer.parseInt(args[1]);
+            client.start();
+        } else {//panel run
+            new StartPanel(client);
+        }
     }
 
     @Override
     public void run() {
-        int levelNumber = 0;
+
+        //levelNumber = 0;//debug
         game_service game = Game_Server_Ex2.getServer(levelNumber);
         //	int id = 999;
         //	game.login(id);
+
         algoGraph = new DW_Graph_Algo();
         String getGraphFromServer = game.getGraph();// get json string of graph
         ((DW_Graph_Algo) algoGraph).loadFromString(getGraphFromServer);
@@ -63,6 +76,8 @@ public class Ex2 implements Runnable {
         String res = game.toString();
 
         System.out.println(res);
+        JOptionPane.showMessageDialog(null,"you made: " +arena.getMoves() +" moves"
+        +", and your grade:" +arena.getScore());
         System.exit(0);
     }
 

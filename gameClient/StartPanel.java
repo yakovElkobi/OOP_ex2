@@ -8,16 +8,15 @@ public class StartPanel extends JFrame implements ActionListener{
     private JTextField textGetId;
     private JComboBox<Integer> comboBox;
     private JButton buttonStart;
+    public static Thread client;
 
-    String id;
-    int level;
-
-    public StartPanel(){
+    public StartPanel(Thread ex2Thread){
         super("Ex2 - Pokemon Game");
         initFrame();
         initLabel();
         setLayout(null);
         setVisible(true);
+        client = ex2Thread;
     }
 
     private void initFrame(){
@@ -65,20 +64,13 @@ public class StartPanel extends JFrame implements ActionListener{
         add(comboBox);
     }
 
-    public String getId() {
-        return id;
-    }
-
-    public int getLevel() {
-        return level;
-    }
-
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == buttonStart){
-            level = comboBox.getSelectedIndex();
-            id = textGetId.getText();
-            System.out.println("ID:" +id +"," +"Level:" +level);
+            Ex2.levelNumber = comboBox.getSelectedIndex();
+            Ex2.id = Integer.parseInt(textGetId.getText());
+            setVisible(false);
+            client.start();
         }
     }
 }
