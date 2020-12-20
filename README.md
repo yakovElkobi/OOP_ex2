@@ -48,23 +48,26 @@ The movements is on weighted directed graph.<br>
 | <img width="170" height="150" src="https://github.com/yakovElkobi/OOP_ex2/blob/master/resources/pikachu.png?raw=true">| <img width="170" height="150" src="https://github.com/yakovElkobi/OOP_ex2/blob/master/resources/bullbasaur.png?raw=true">| <img width="170" height="150" src="https://github.com/yakovElkobi/OOP_ex2/blob/master/resources/charmander.png?raw=true">|
 
 
-In order to play the game.<br>
-download the following files:
+## How do I play?
 
-* EX2.jar
-* data folder
-* resource folder (for animaations).<br>
+## Clone repository:
+```
+$ git clone https://github.com/yakovElkobi/OOP_ex2.git       
+```
 
-You have two options to run the game:<br>
+Clone the repository, Then you have two options to run the game:
 # Option 1:
-Open you command line and type the following command:<br>
-java -jar EX2.jar ID Level_Number<br>
-# Option 2:
-Open the EX2.jar and fill the following:
-* Enter your ID (you can type other number).
-* Enter the level [0-23].
+Click twice on the jar file and enter you ID and the wanted game level and press start! <br /> 
+
+Another option is to open the command line in the package where you saved the jar and the data folder and type:
+```
+java -jar Ex2.jar <enter_your_id_here> <enter_level_here>
+```
+and the game will start in the wanted game level.
+* Enter level [0-23].
+
 Now you can enjoy  the game.
 
+See our [Wiki] for full documentation, examples, operational details and other information.
 
-
-
+[Wiki]: https://github.com/yakovElkobi/OOP_ex2/wiki
