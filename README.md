@@ -6,6 +6,7 @@
 In this pokemon game you have a grop of agents and Pokemons that appear in randomly way.<br>
 The goal to is to catch as much as you can before that time is running out.<br>
 The movements is on weighted directed graph.<br>
+
 #
 # Player Stats
 <table>
@@ -45,6 +46,22 @@ The movements is on weighted directed graph.<br>
 | Pikachu - 5 Points  | bullbasaur - [6-10] Points| charmander - [11-15] Points|
 | ------------- | ------------- | ------------- |
 | <img width="170" height="150" src="https://github.com/yakovElkobi/OOP_ex2/blob/master/resources/pikachu.png?raw=true">| <img width="170" height="150" src="https://github.com/yakovElkobi/OOP_ex2/blob/master/resources/bullbasaur.png?raw=true">| <img width="170" height="150" src="https://github.com/yakovElkobi/OOP_ex2/blob/master/resources/charmander.png?raw=true">|
+
+
+In order to play the game.<br>
+download the following files:
+
+* EX2.jar
+* data folder
+* resource folder (for animaations)
+You have two options to run the game:
+Open you command line and type the following command:
+java -jar EX2.jar ID Level_Number
+or
+Open the EX2.jar and fill the following:
+* Enter your ID (you can type other number).
+* Enter the level [0-23].
+Now you can enjoy  the game.
 
 
 
