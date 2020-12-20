@@ -23,7 +23,7 @@ The movements is on weighted directed graph.
   <img width="100" height="100" src="https://github.com/yakovElkobi/OOP_ex2/blob/master/resources/pokeboll_v2.png">
 </picture></td>
             <td>Speed</td>
-            <td>from 1-5</td>
+            <td>1-5</td>
         </tr>
         <tr>
             <td>Points</td>
