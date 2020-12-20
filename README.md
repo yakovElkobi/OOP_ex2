@@ -41,7 +41,7 @@ The movements is on weighted directed graph.
 </table>
 
 #
-# Pokemon
+# Pokemons
 
 | Pikachu - 5 Points  | bullbasaur - [6-10] Points| charmander - [11-15] Points|
 | ------------- | ------------- | ------------- |
