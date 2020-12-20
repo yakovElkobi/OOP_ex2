@@ -57,6 +57,9 @@ $ git clone https://github.com/yakovElkobi/OOP_ex2.git
 
 Clone the repository, Then you have two options to run the game:
 # Option 1:
+
+![](https://github.com/yakovElkobi/OOP_ex2/blob/master/resources/startpanel.jpg)
+
 Click twice on the jar file and enter you ID and the wanted game level and press start! <br /> 
 
 # Option 2:
