@@ -5,7 +5,7 @@
 <p>&nbsp;</p>
 In this pokemon game you have a grop of agents and Pokemons that appear in randomly way.<br>
 The goal to is to catch as much as you can before that time is running out.<br>
-The movements is on weighted directed graph.
+The movements is on weighted directed graph.<br>
 #
 # Player Stats
 <table>
