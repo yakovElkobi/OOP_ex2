@@ -53,7 +53,8 @@ download the following files:
 
 * EX2.jar
 * data folder
-* resource folder (for animaations)
+* resource folder (for animaations).
+
 You have two options to run the game:
 Open you command line and type the following command:
 java -jar EX2.jar ID Level_Number
