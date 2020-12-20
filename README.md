@@ -57,8 +57,8 @@ download the following files:
 
 You have two options to run the game:<br>
 Open you command line and type the following command:<br>
-java -jar EX2.jar ID Level_Number
-or
+java -jar EX2.jar ID Level_Number<br>
+# Or
 Open the EX2.jar and fill the following:
 * Enter your ID (you can type other number).
 * Enter the level [0-23].
