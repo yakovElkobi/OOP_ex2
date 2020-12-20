@@ -12,14 +12,14 @@ Player Stats
 |-----------------|----------------|----------------------|
 |                 |      Speed     |      1-5             |
 |                 |                |                      |              
-|                 |                |  As far as the agent |
-|                 |     Points     |  Catches Pokémon's   |
-|                 |                |  The values increase | 
-|                 |                |                      |
+|                 |                   As far as the agent |
+|                 |     Points       Catches Pokémon's    |
+|                 |                  The values increase  | 
+|                 |                                       |
 |                 |    Location    |  On the node         |
 |                 |                |                      |               
 |                 |    Next move   |  Next node           |
 |                                  |                      |
 
 
-<table>
+
