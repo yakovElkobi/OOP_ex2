@@ -9,6 +9,36 @@ The goal to is to catch as much as you can before that time is running out.
 The movements is on weighted directed graph.
 #
 #Player Stats
+<table>
+    <thead>
+        <tr>
+            <th>Player - Ash</th>
+            <th>Skill</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=4><picture>
+  <img src="https://www.pokecommunity.com/customavatars/avatar514181_2.gif" alt="Flowers" style="width:auto;">
+</picture></td>
+            <td>Speed</td>
+            <td>from 1 to 5</td>
+        </tr>
+        <tr>
+            <td>Number of Points</td>
+            <td> the amount of points is calculated by the values of the Pokemons that the agent caught.</td>
+        </tr>
+        <tr>
+            <td>Location</td>
+            <td>the current location of the agent in the arena.</td>
+        </tr>
+        <tr>
+            <td>Next Move</td>
+            <td>the next act of the agent.</td>
+        </tr>
+    </tbody>
+</table>
 
 ----------------------------------------------------------
 |   **Player**    |    **Skills**  |      **Details**     |
