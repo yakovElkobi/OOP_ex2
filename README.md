@@ -20,7 +20,7 @@ The movements is on weighted directed graph.
     <tbody>
         <tr>
             <td rowspan=4><picture>
-  <img width="200" height="200" src="https://github.com/yakovElkobi/OOP_ex2/blob/master/resources/pokeboll_v2.png">
+  <img width="100" height="100" src="https://github.com/yakovElkobi/OOP_ex2/blob/master/resources/pokeboll_v2.png">
 </picture></td>
             <td>Speed</td>
             <td>from 1-5</td>
