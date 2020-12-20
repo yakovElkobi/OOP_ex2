@@ -54,16 +54,19 @@ The movements is on weighted directed graph.<br>
 ```
 $ git clone https://github.com/yakovElkobi/OOP_ex2.git       
 ```
-
 Clone the repository, Then you have two options to run the game:
+
 # Option 1:
 
 ![](https://github.com/yakovElkobi/OOP_ex2/blob/master/resources/startpanel.jpg)
 
-Click twice on the jar file and enter you ID and the wanted game level and press start! <br /> 
+Click twice on the jar file
+* Enter you ID
+* Choose game level
+press start! <br /> 
 
 # Option 2:
-Open the command line in the package where you saved the jar and the data folder and type:
+* Open the command line in the package where you saved the jar and the data folder and type:
 ```
 java -jar Ex2.jar <enter_your_id_here> <enter_level_here>
 ```
@@ -72,6 +75,13 @@ and the game will start in the wanted game level.
 
 Now you can enjoy  the game.
 
+
+#
+# The game
+
+![](https://github.com/yakovElkobi/OOP_ex2/blob/master/resources/game1.jpg)
+
 See our [Wiki] for full documentation, examples, operational details and other information.
 
 [Wiki]: https://github.com/yakovElkobi/OOP_ex2/wiki
+
