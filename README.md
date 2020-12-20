@@ -59,7 +59,8 @@ Clone the repository, Then you have two options to run the game:
 # Option 1:
 Click twice on the jar file and enter you ID and the wanted game level and press start! <br /> 
 
-Another option is to open the command line in the package where you saved the jar and the data folder and type:
+# Option 2:
+Open the command line in the package where you saved the jar and the data folder and type:
 ```
 java -jar Ex2.jar <enter_your_id_here> <enter_level_here>
 ```
