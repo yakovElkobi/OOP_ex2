@@ -11,7 +11,7 @@ Player Stats
 |   **Player**    |    **Skills**  |      **Details**     |
 |-----------------|----------------|----------------------|
 |                 |      Speed     |      1-5             |
-|                 |                |                      |              
+|                 |----------------------------------------                |                      |              
 |                 |                |  As far as the agent |
 |                 |     Points     |  Catches Pokémon's   |
 |                 |                |  The values increase | 
