@@ -19,5 +19,5 @@ Player Stats
 |                 |    Location    |  On the node         |
 |                 |                |                      |               
 |                 |    Next move   |  Next node           |
-|-----------------|----------------|----------------------|
+|                                  |                      |
 
