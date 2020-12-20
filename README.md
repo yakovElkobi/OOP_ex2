@@ -78,12 +78,11 @@ Now you can enjoy  the game.
 
 #
 # The game
-<p>&nbsp;</p>
-<p align="center">
 
    <img width="400" height="250" src = https://github.com/yakovElkobi/OOP_ex2/blob/master/resources/gamegif.gif>
-</p>
-<p>&nbsp;</p>
+
+|  ![](https://github.com/yakovElkobi/OOP_ex2/blob/master/resources/game1.jpg) | ![](https://github.com/yakovElkobi/OOP_ex2/blob/master/resources/game2.jpg)| 
+| ------------- | ------------- |
 
 See our [Wiki] for full documentation, examples, operational details and other information.
 
