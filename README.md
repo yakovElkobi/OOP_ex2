@@ -8,11 +8,11 @@ In this pokemon game you have a grop of agents and Pokemons that appear in rando
 The goal to is to catch as much as you can before that time is running out.
 The movements is on weighted directed graph.
 #
-#Player Stats
+# Player Stats
 <table>
     <thead>
         <tr>
-            <th>Player <th>
+            <th>Player</th>
             <th>Skills</th>
             <th>Details</th>
         </tr>
