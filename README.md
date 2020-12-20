@@ -43,7 +43,7 @@ The movements is on weighted directed graph.
 #
 # Pokemon
 
-| Pikachu - 5 Points  | Charizard - [6-10] Points| Mewtwo - [11-15] Points|
+| Pikachu - 5 Points  | bullbasaur - [6-10] Points| charmander - [11-15] Points|
 | ------------- | ------------- | ------------- |
 | <img width="170" height="150" src="https://github.com/yakovElkobi/OOP_ex2/blob/master/resources/pikachu.png?raw=true">| <img width="170" height="180" src="https://github.com/yakovElkobi/OOP_ex2/blob/master/resources/bullbasaur.png?raw=true">| <img width="170" height="170" src="https://github.com/yakovElkobi/OOP_ex2/blob/master/resources/charmander.png?raw=true">|
 
