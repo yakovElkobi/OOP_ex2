@@ -81,7 +81,7 @@ Now you can enjoy  the game.
 <p>&nbsp;</p>
 <p align="center">
 
-   <img width="700" height="400" src = https://github.com/yakovElkobi/OOP_ex2/blob/master/resources/gamegif.gif>
+   <img width="400" height="250" src = https://github.com/yakovElkobi/OOP_ex2/blob/master/resources/gamegif.gif>
 </p>
 <p>&nbsp;</p>
 
