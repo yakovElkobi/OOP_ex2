@@ -79,7 +79,7 @@ Now you can enjoy  the game.
 #
 # The game
 
-<img width="500" height="500" src = https://github.com/yakovElkobi/OOP_ex2/blob/master/resources/game1.jpg>
+<img width="700" height="500" src = https://github.com/yakovElkobi/OOP_ex2/blob/master/resources/game1.jpg>
 
 See our [Wiki] for full documentation, examples, operational details and other information.
 
