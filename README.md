@@ -78,8 +78,12 @@ Now you can enjoy  the game.
 
 #
 # The game
+<p>&nbsp;</p>
+<p align="center">
 
    <img width="800" height="500" src = https://github.com/yakovElkobi/OOP_ex2/blob/master/resources/game1.jpg>
+</p>
+<p>&nbsp;</p>
 
 See our [Wiki] for full documentation, examples, operational details and other information.
 
