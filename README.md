@@ -6,8 +6,6 @@ The goal to is to catch as much as you can before that time is running out.
 The movements is on weighted directed graph.
 
 Player Stats
-![](https://github.com/yakovElkobi/OOP_ex2/blob/master/resources/pokeboll_v2.png)
-
 
 ----------------------------------------------------------
 |   **Player**    |    **Skills**  |      **Details**     |
@@ -19,7 +17,7 @@ Player Stats
 |                 |                |  The values increase |  
 |                 |----------------|----------------------|
 |                 |    Location    |  On the node         |
-|                 |---------------------------------------|                
+|                 |----------------|----------------------|                
 |                 |    Next move   |  Next node           |
 |-----------------|----------------|----------------------|
 
