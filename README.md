@@ -57,7 +57,7 @@ The movements is on weighted directed graph.<br>
 ```
 $ git clone https://github.com/yakovElkobi/OOP_ex2.git       
 ```
-Clone the repository, Then you have two options to run the game:
+Clone the repository and install the lastest version of [JDK](https://www.oracle.com/java/technologies/javase-downloads.html) , Then you have two options to run the game:
 
 # Option 1:
 
