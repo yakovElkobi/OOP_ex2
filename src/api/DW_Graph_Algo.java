@@ -92,7 +92,7 @@ public class DW_Graph_Algo implements dw_graph_algorithms {
      * using shortestPath that return the list with the shortestPath
      * @param src - start node
      * @param dest - end (target) node
-     * @return double
+     * @return double - weight
      */
     @Override
     public double shortestPathDist(int src, int dest) {

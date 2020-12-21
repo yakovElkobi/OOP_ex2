@@ -14,7 +14,6 @@ public class CL_Agent {
 	private static int count = 0;
 	private static int seed = 3331;
 	private int id;//id agent
-	//	private long _key;
 	private geo_location pos;//location agent
 	private double speed;//speed agent
 	private edge_data curr_edge;
@@ -23,7 +22,6 @@ public class CL_Agent {
 	private CL_Pokemon curr_fruit;
 	private long _sg_dt;
 	private double value;
-
 
 	public CL_Agent(directed_weighted_graph graph, int startNode) {
 		this.gameGraph = graph;
@@ -36,7 +34,6 @@ public class CL_Agent {
 	public void update(String json) {
 		JSONObject line;
 		try {
-			// "GameServer":{"graph":"A0","pokemons":3,"agents":1}}
 			line = new JSONObject(json);
 
 			JSONObject agent = line.getJSONObject("Agent");
@@ -69,31 +66,18 @@ public class CL_Agent {
 	}
 
 	public String toJSON() {
-		int d = this.getNextNode();
-		String ans = "{\"Agent\":{"
-				+ "\"id\":"+this.id +","
-				+ "\"value\":"+this.value +","
-				+ "\"src\":"+this.curr_node.getKey()+","
-				+ "\"dest\":"+d+","
-				+ "\"speed\":"+this.getSpeed()+","
-				+ "\"pos\":\""+ pos.toString()+"\""
-				+ "}"
-				+ "}";
-		return ans;
-		/*
-		Gson gson = new Gson();
-		JsonObject date = new JsonObject();
-		date.add("id", gson.toJsonTree(this.getID()));
-		date.add("value", gson.toJsonTree(this.getValue()));
-		date.add("src", gson.toJsonTree(this.getSrcNode()));
-		date.add("dest", gson.toJsonTree(this.getNext()));
-		date.add("speed", gson.toJsonTree(this.getSpeed()));
-		date.add("pos", gson.toJsonTree(this.getLocation().toString()));
-		JsonObject agent = new JsonObject();
-		agent.add("Agent", date);
-		return agent.toString();
 
-		 */
+		Gson gson = new Gson();
+		JsonObject info = new JsonObject();
+		info.add("id", gson.toJsonTree(getID()));
+		info.add("value", gson.toJsonTree(getValue()));
+		info.add("src", gson.toJsonTree(getSrcNode()));
+		info.add("dest", gson.toJsonTree(getNextNode()));
+		info.add("speed", gson.toJsonTree(getSpeed()));
+		info.add("pos", gson.toJsonTree(getLocation().toString()));
+		JsonObject agent = new JsonObject();
+		agent.add("Agent", info);
+		return agent.toString();
 	}
 
 	private void setMoney(double v) {

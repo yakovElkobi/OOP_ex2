@@ -14,7 +14,6 @@ public class CL_Pokemon {
 	public CL_Pokemon(){
 		edge = null;
 		type = 0;
-		//	_speed = s;
 		value = 0;
 		pos = null;
 		weight = -1;
@@ -22,7 +21,6 @@ public class CL_Pokemon {
 	}
 	public CL_Pokemon(Point3D p, int t, double v, double s, edge_data e) {
 		type = t;
-		//	_speed = s;
 		value = v;
 		setEdge(e);
 		pos = p;
@@ -62,8 +60,6 @@ public class CL_Pokemon {
 	public int getType() {
 		return type;
 	}
-
-//	public double getSpeed() {return _speed;}
 
 	public double getValue() {
 		return value;

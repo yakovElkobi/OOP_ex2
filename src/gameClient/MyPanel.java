@@ -35,7 +35,6 @@ public class MyPanel extends JPanel {
 		drawAgants(g);
 		drawTime(g);
 		drawInfoGame(g);
-		//drawInfo(g);
 	}
 
 	private void drawTime(Graphics g) {
@@ -44,9 +43,7 @@ public class MyPanel extends JPanel {
 			String time = "Time:";
 			g.setColor(Color.BLACK);
 			g.setFont(new Font("Ariel", Font.BOLD, (this.getHeight() + this.getWidth()) / 60));
-			// graphics.drawString(str , 100, 60 + 2 * 20);
 			g.drawString(time +str, 20, 50);
-			//  graphics.setFont(new Font("Ariel", Font.BOLD, (this.getHeight() + this.getWidth()) / 90));
 		}
 	}
 
@@ -127,7 +124,6 @@ public class MyPanel extends JPanel {
 
 	private void drawAgants(Graphics g) {
 		List<CL_Agent> listAgents = arena.getAgents();
-		//	Iterator<OOP_Point3D> itr = rs.iterator();
 		g.setColor(Color.black);
 		int i=0;
 		while(listAgents != null && i < listAgents.size()) {
@@ -137,7 +133,6 @@ public class MyPanel extends JPanel {
 			i++;
 			if(c != null) {
 				geo_location fp = this.w2f.world2frame(c);
-				//g.fillOval((int)fp.x()-r, (int)fp.y()-r, 2*r, 2*r);//boaz
 				paintAgent(g,(int)fp.x()-r,(int)fp.y()-r,3*r,3*r);
 				g.setFont(new Font(null,Font.BOLD,25));
 				drawInfo(g,(int)fp.x()-r,(int)fp.y()-r,agentNumber);
@@ -163,8 +158,6 @@ public class MyPanel extends JPanel {
 		geo_location d0 = this.w2f.world2frame(d);
 		G2D.setStroke(new BasicStroke(2));
 		G2D.drawLine((int)s0.x(), (int)s0.y(), (int)d0.x(), (int)d0.y());
-		//g.drawLine((int)s0.x(), (int)s0.y(), (int)d0.x(), (int)d0.y());
-		//	g.drawString(""+n.getKey(), fp.ix(), fp.iy()-4*r);
 	}
 
 

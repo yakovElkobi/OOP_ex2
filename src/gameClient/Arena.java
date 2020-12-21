@@ -60,7 +60,7 @@ public class Arena {
 
 	public void setGraph(directed_weighted_graph g) {
 		this.gameGraph =g;
-	}//init();}
+	}
 
 	private void init( ) {
 		MIN=null; MAX=null;
@@ -156,7 +156,6 @@ public class Arena {
 				c.update(ags.get(i).toString());
 				ans.add(c);
 			}
-			//= getJSONArray("Agents");
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
@@ -184,7 +183,6 @@ public class Arena {
 				JSONObject pk = pp.getJSONObject("Pokemon");
 				int t = pk.getInt("type");
 				double v = pk.getDouble("value");
-				//double s = 0;//pk.getDouble("speed");
 				String p = pk.getString("pos");
 				CL_Pokemon f = new CL_Pokemon(new Point3D(p), t, v, 0, null);
 				ans.add(f);
@@ -195,7 +193,6 @@ public class Arena {
 	}
 
 	public static void updateEdge(CL_Pokemon fr, directed_weighted_graph g) {
-		//	oop_edge_data ans = null;
 		Iterator<node_data> itr = g.getV().iterator();
 		while(itr.hasNext()) {
 			node_data v = itr.next();
