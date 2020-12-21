@@ -9,7 +9,6 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.util.LinkedList;
 import java.util.List;
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -113,15 +112,14 @@ public class MyPanel extends JPanel {
 			for (CL_Pokemon pokemon: listPokemos){
 				Point3D point = pokemon.getLocation();
 				int r =10;
-				g.setColor(Color.green);
-				if(pokemon.getType() < 0) {
-					g.setColor(Color.orange);
-				}
 				if(point != null) {
 					geo_location w2fPoint = this.w2f.world2frame(point);
-					paintPokemon(g,(int)w2fPoint.x()-20,(int)w2fPoint.y()-20,4*r,4*r);
-					//g.fillOval((int)w2fPoint.x()-r, (int)w2fPoint.y()-r, 2*r, 2*r);//boaz
-					//g.drawString(""+n.getKey(), fp.ix(), fp.iy()-4*r);
+					if(pokemon.getValue() <=5)
+						paintPokemon(g,(int)w2fPoint.x()-18,(int)w2fPoint.y()-20,3*r,3*r);
+					if(pokemon.getValue() > 5 && pokemon.getValue() <= 10)
+						paintBulbasaur(g,(int)w2fPoint.x()-18,(int)w2fPoint.y()-20,3*r,3*r);
+					else if(pokemon.getValue() > 10)
+						paintCharmander(g,(int)w2fPoint.x()-18,(int)w2fPoint.y()-20,3*r,3*r);
 				}
 			}
 		}
@@ -180,13 +178,31 @@ public class MyPanel extends JPanel {
 		g.drawImage(agent, x, y, width, height, this);
 	}
 
-	public void paintPokemon(Graphics g,int x,int y,int width,int height) {
-		BufferedImage agent = null;
+        public void paintPokemon(Graphics g,int x,int y,int width,int height) {
+		BufferedImage pikachu = null;
 		try {
-			agent = ImageIO.read(new File("./resources/pok.png"));
+		pikachu = ImageIO.read(new File("./resources/pikachu.png"));
 		} catch (IOException e) {
-			e.printStackTrace();
+		e.printStackTrace();
 		}
-		g.drawImage(agent, x, y, width, height, this);
+		g.drawImage(pikachu, x, y, width, height, this);
+		}
+        public void paintBulbasaur(Graphics g,int x,int y,int width,int height) {
+		BufferedImage bulbasaur = null;
+		try {
+		bulbasaur = ImageIO.read(new File("./resources/bullbasaur.png"));
+		} catch (IOException e) {
+		e.printStackTrace();
+		}
+		g.drawImage(bulbasaur, x, y, width, height, this);
+		}
+            public void paintCharmander(Graphics g,int x,int y,int width,int height) {
+		BufferedImage charmander = null;
+		try {
+		charmander = ImageIO.read(new File("./resources/charmander.png"));
+		} catch (IOException e) {
+		e.printStackTrace();
+		}
+		g.drawImage(charmander, x, y, width, height, this);
 	}
 }

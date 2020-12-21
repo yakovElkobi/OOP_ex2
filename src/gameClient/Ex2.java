@@ -19,7 +19,7 @@ public class Ex2 implements Runnable {
     private static MyFrame window;
     private static Arena arena;
     protected static Integer id;
-    protected static Integer levelNumber;
+    protected static Integer level_Number;
 
 
     public static void main(String[] args) {
@@ -39,9 +39,9 @@ public class Ex2 implements Runnable {
 
     @Override
     public void run() {
-        int levelNumber = -1;
-        game_service game = Game_Server_Ex2.getServer(levelNumber);
-        //	int id = 999;
+        int level_Number = 23;
+        game_service game = Game_Server_Ex2.getServer(level_Number);
+        	//int id = 305446627;
         //	game.login(id);
         algoGraph = new DW_Graph_Algo();
         String getGraphFromServer = game.getGraph();// get json string of graph
@@ -116,44 +116,10 @@ public class Ex2 implements Runnable {
                int dest = nextNode(algoGraph,list, agent);
                game.chooseNextEdge(agent.getID(), dest);
                list.remove(agent.getCurr_fruit());
-               System.out.println("Agent: " + id + ", val: " + v + "   turned to node: " + dest +"spe"+ agent.getSpeed());
+               System.out.println("Agent: " + id + ", val: " + v + "   turned to node: " + dest);
 
         }
     }
-    /*
-    private static int nextNodeY(dw_graph_algorithms algoGraph, List<CL_Pokemon> listOfPokemons,List<CL_Agent> agent){
-        HashMap<CL_Pokemon,CL_Agent> p = new HashMap<>();
-        HashMap<CL_Agent,Double> d = new HashMap<CL_Agent,Double>();
-        HashMap<CL_Agent,HashMap<>> d = new HashMap<CL_Agent,Double>();
-        CL_Agent t;
-
-        for(CL_Agent a : agent){
-            d.put(a,Double.POSITIVE_INFINITY);
-        }
-
-        for(CL_Agent a : agent) {
-            for (CL_Pokemon pokemon : listOfPokemons) {
-                double s = 0;
-                s = algoGraph.shortestPathDist(a.getSrcNode(),pokemon.getEdge().getSrc());
-                if(s < d.get(a) ) {
-                    if (!p.containsKey(pokemon)) {
-                        d.replace(a, s);
-                        //pokemon.setWeight(s);
-                        p.put(pokemon, a);
-                    } else {
-                        t = p.get(pokemon);
-                        if (d.get(t) > s) {
-                            d.replace(a, s);
-                            p.replace(pokemon, a);
-                        }
-                    }
-                }
-            }
-        }
-
-    }
-
-     */
 
     private static int nextNode(dw_graph_algorithms algoGraph, List<CL_Pokemon> listOfPokemons, CL_Agent agent) {
         double min = Double.POSITIVE_INFINITY;
@@ -231,7 +197,7 @@ public class Ex2 implements Runnable {
             }
         }
         if (nodes.size() < k) {
-
+            
         }
         return nodes;
     }

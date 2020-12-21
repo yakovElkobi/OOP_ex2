@@ -67,7 +67,7 @@ public class StartPanel extends JFrame implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == buttonStart){
-            Ex2.levelNumber = comboBox.getSelectedIndex();
+            Ex2.level_Number = comboBox.getSelectedIndex();
             Ex2.id = Integer.parseInt(textGetId.getText());
             setVisible(false);
             client.start();
