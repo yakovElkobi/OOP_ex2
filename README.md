@@ -4,7 +4,7 @@
 </p>
 <p>&nbsp;</p>
 
-> - Authers [Yakov Elkobi](https://github.com/yakovElkobi) & [Ariel Saadon](https://github.com/arielsaadon)
+> - Authers [Yakov Elkobi](https://github.com/yakovElkobi) && [Ariel Saadon](https://github.com/arielsaadon)
 
 In this pokemon game you have a grop of agents and Pokemons that appear in randomly way.<br>
 The goal to is to catch as much as you can before that time is running out.<br>
